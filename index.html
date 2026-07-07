@@ -22,37 +22,88 @@
         <form>
 
             <div class="row">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Surname">
+                <input type="text" placeholder="First name" id="txtFirstName">
+                <input type="text" placeholder="Last name" id="txtLastName">
             </div>
 
-            <input type="email" placeholder="Mobile number or email address">
+            <input type="email" placeholder="Mobile number or email address" id="txtEmail">
 
-            <input type="password" placeholder="New password">
+            <input type="password" placeholder="New password" id="txtPassword">
 
             <label class="label">Date of birth</label>
 
             <div class="row">
-                <select>
+                <select id="txtDay">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                     <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
                 </select>
 
-                <select>
+                <select id="txtMonth">
                     <option>Jan</option>
                     <option>Feb</option>
                     <option>Mar</option>
                     <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
                 </select>
 
-                <select>
+                <select id="txtYear">
                     <option>2026</option>
                     <option>2025</option>
                     <option>2024</option>
                     <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
                 </select>
             </div>
 
@@ -62,17 +113,17 @@
 
                 <label>
                     Female
-                    <input type="radio" name="gender">
+                    <input  type="radio" name="selectGender" value="Female">
                 </label>
 
                 <label>
                     Male
-                    <input type="radio" name="gender">
+                    <input   type="radio" name="selectGender" value="Male">
                 </label>
 
                 <label>
                     Custom
-                    <input type="radio" name="gender">
+                    <input type="radio" name="selectGender" value="Custom">
                 </label>
 
             </div>
@@ -86,7 +137,7 @@
                 By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
             </p>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit" onclick="signUp()">Sign Up</button>
 
         </form>
 
@@ -96,5 +147,7 @@
 
 </div>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
