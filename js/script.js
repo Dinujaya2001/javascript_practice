@@ -31,15 +31,35 @@ function signUp() {
  };
 
  userList.push(user);
+ loadTable();
 
 
- console.log(FirstName);
- console.log(LastName);
- console.log(txtEmailOrPhoneNumber);
- console.log(Password);
- console.log(birthday);
- console.log(Gender);
+ console.log(userList[0].FirstName);
+ console.log(userList[0].LastName);
+ console.log(userList[0].txtEmailOrPhoneNumber);
+ console.log(userList[0].Password);
+ console.log(userList[0].birthday);
+ console.log(userList[0].Gender);
  
 
 
+}
+
+function loadTable(){
+   let tableData = document.getElementById("trUserData");
+   let tableContent = "";
+   for(let i = 0; i<userList.length;i++){
+      tableContent += `<tr >
+        <td >${userList[i].FirstName}</td>
+        <td >${userList[i].LastName}</td>
+        <td >${userList[i].txtEmailOrPhoneNumber}</td>
+        <td >${userList[i].Password}</td>
+        <td >${userList[i].birthday}</td>
+        <td >${userList[i].Gender}</td>
+    </tr>`
+
+    tableData.innerHTML = tableContent;
+
+     console.log(tableData);
+   }
 }
